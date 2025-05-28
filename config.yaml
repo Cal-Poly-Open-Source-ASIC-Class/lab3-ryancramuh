@@ -1,8 +1,8 @@
 {
     "DESIGN_NAME": "WB_RAM2K",
     "VERILOG_FILES": "dir::/rtl/*.sv",
-    "CLOCK_PERIOD": 10, 
-    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 100, 
+    "CLOCK_PORT": "clk_i",
     "FP_PDN_SKIPTRIM": true,
     "RUN_POST_GRT_RESIZER_TIMING": true,
     "RUN_POST_GRT_DESIGN_REPAIR": true,
@@ -10,7 +10,7 @@
 
     # Die Area Sizing
     "FP_SIZING": "absolute",
-    "DIE_AREA": [0, 0, 3000, 900],
+    "DIE_AREA": [0, 0, 1600, 1600],
 
     "VDD_NETS": [
         "VPWR"
@@ -23,12 +23,12 @@
       "DFFRAM256x32": {
           "instances": {
           "RAM_1": {
-              "location": [100, 200], 
+              "location": [150, 200], 
               "orientation": "N" 
           },
           "RAM_2": {
-              "location": [1700, 200],
-              "orientation": "FN"
+              "location": [150, 850],
+              "orientation": "N"
           }
         },
         "gds": [
